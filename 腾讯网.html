@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>第六次作业</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+			
+			.box1 {
+				background-color: lightyellow;
+				height: 70px;
+				margin: 0 auto;
+				width: 1000px;
+			}
+			
+			.zong {
+				position: absolute;
+				margin: 0 auto;
+			}
+			
+			.dao1 {
+				border-top-left-radius: 50px;
+				border-bottom-left-radius: 50px;
+			}
+			
+			.dropdown {
+				width: 68px;
+				height: 32px;
+				background-color: azure;
+				float: right;
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+				position: relative;
+				display: inline-block;
+			}
+			
+			.dao22 {
+				width: 320px;
+				height: 32px;
+				background-color: #f3f6f8;
+				border: 1 solid #dfdfdf;
+				float: right;
+				z-index: 1;
+			}
+			
+			.dao33 {
+				width: 110px;
+				height: 34px;
+				background-color: #1479d7;
+				float: right;
+				border-top-right-radius: 30px;
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+				border-bottom-right-radius: 30px;
+				z-index: 2;
+			}
+			
+			.dropbtn {
+				background-color: #f3f6f8;
+				color: black;
+				border-top-left-radius: 50px;
+				border-bottom-left-radius: 50px;
+				border: none;
+				display: block;
+				width: 68px;
+				height: 32px;
+				cursor: pointer;
+				/*手形*/
+			}
+			
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: white;
+				min-width: 68px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			}
+			
+			.dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+			
+			.dropdown-content a:hover {
+				background-color: #F3F6F8;
+			}
+			
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			
+			.dropdown:hover .dropbtn {
+				background-color: #f3f6f8;
+			}
+			
+			.daoyou3 {
+				border: 1px solid #ededed;
+				background-color: #f5f5f5;
+				display: inline-block;
+			}
+			
+			.ul1 {
+				float: left;
+				margin: 0;
+				list-style-type: none;
+				margin: 0;
+				padding: 10;
+				overflow: hidden;
+				background-color: #1479d7;
+			}
+			
+			li {
+				float: left;
+				width: 82.3px;
+				height: 49.6px;
+			}
+			
+			li a {
+				display: block;
+				color: #FFF;
+				text-align: center;
+				width: 45.9px;
+				height: 32px;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			
+			li a:hover {
+				color: #1479d7;
+				background-color: #F3F6F8;
+			}
+			
+			.contentb {
+				position: absolute;
+				left: 520px;
+			}
+			
+			.contentc {
+				position: absolute;
+				right: 40px;
+			}
+			
+			.a111:link {
+				color: #333;
+				text-decoration: none;
+			}
+			
+			.a111:visited {
+				color: #333;
+				text-decoration: none;
+			}
+			
+			.a111:hover {
+				color: #1479D7;
+				text-decoration: underline;
+			}
+			
+			.a111:active {
+				color: #1479D7;
+				text-decoration: underline;
+			}
+			
+			.zone a:hover {
+				image-rendering: ;
+			}
+			
+			.mail a:hover {}
+		</style>
+		<link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<div class="zong" style="background-color: aliceblue; width: 1478.4px; height: 6419.6px;">
+
+			<div class="daohang" style="width: 1400px; height: 80px; background-color:white; margin: 0 auto;">
+				<h1 style="display: block; float: left;">
+				<a href="/" target="_blank">
+					<img width="100%" src="img/腾讯网logo.png" alt="腾讯网"
+						 style="width: 131px; height: 35px; margin:20px 0px  25px  0px;" >
+				</a>
+			</h1>
+
+				<div class="dao1" style="width: 500px; height:34px ; margin: 20px 0px 25px 0px; background-color:#f3f6f8; float: left; position: relative; left: 300px;">
+
+					<div class="dao33">
+						<a href="https://www.sogou.com/?hdq=sogou-wsse-3f7bcd0b3ea82268" style="text-decoration: none;" target="_blank">
+							<span style="color: #f3f6f8; display: block;margin: 5px 0px 5px 20px;"><!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->搜狗搜索</span></a>
+					</div>
+
+					<input class="dao22" value=""></input>
+					<div class="dropdown">
+						<button class="dropbtn">网页</button>
+						<div class="dropdown-content">
+							<a href="">网页</a>
+							<a href="">图片</a>
+							<a href="">视频</a>
+							<a href="">音乐</a>
+							<a href="">地图</a>
+							<a href="">问问</a>
+							<a href="">百科</a>
+							<a href="">新闻</a>
+							<a href="">购物</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="dao44" style="width: 180px; height: 40px; background-color: white; float: right; margin: 20px 0px 10px 0px;">
+					<div class="daoyou1" style="width: 35px; height: 40px;  background-color: aquamarine; float: left;" class="zone">
+						<a href="https://qzone.qq.com/" target="_blank">
+							<img src="img/空间.png" height="40px" style="float: left; " alt="QQ空间" title="QQ空间" />
+						</a>
+					</div>
+					<div class="daoyou2" style="background-color: bisque; float: left; margin: 0px 14px 10px 30px;" class="mail">
+						<a href="https://mail.qq.com/" target="_blank">
+							<img src="img/邮箱.png" height="40px" style="float: left;" alt="QQ邮箱" title="QQ邮箱" />
+						</a>
+					</div>
+					<div class="daoyou3" float: left; ">
+					<a  href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101487368&redirect_uri=https%3A%2F%2Fpacaio.match.qq.com%2Fqq%2FloginBack%3Fsurl%3Dhttps%3A%2F%2Fwww.qq.com%2F&state=5b481c68e379d " 
+						 style="text-decoration: none; color: #60a5e4; text-align: center; font-size: 14px; display: inline-block; height: 35px; width: 35px; line-height: 35px; ">
+						登录
+					</a>
+				</div>
+	
+			</div>	
+			</div>
+			
+			<div class="daohanglan " style="width: 1400px; height: 80px; background-color: white; margin: 0 auto; ">
+				<ul class="ul1 ">
+					<li><a>新闻</a></li>
+					<li><a>视频</a></li>
+					<li><a>图片</a></li>
+					<li><a>军事</a></li>
+					<li><a>体育</a></li>
+					<li><a>NBA</a></li>
+					<li><a>娱乐</a></li>
+					<li><a>财经</a></li>
+				    <li><a>科技</a></li>
+					<li><a>时尚</a></li>
+					<li><a>汽车</a></li>
+					<li><a>房产</a></li>
+				    <li><a>教育</a></li>
+					<li><a>文化</a></li>
+					<li><a>游戏</a></li>
+					<li><a>星座</a></li>
+					<li><a>更多</a></li>
+					
+				</ul>
+				
+				
+				
+				
+			</div>
+			
+			<div style="width: 1400px; height: 95px; margin: 0 auto; background-color: white; ">
+				<div style="width: 1074px; height: 75px; background-color: white; float: left; ">
+					<img src="img/小横条.png " width="920px " height="74.99px " />
+				</div>
+				<img src="img/次小横条.png " width="326px "   />
+			</div>
+			
+			<div class="content " style="width: 1400px; height: 1071px; background-color: white; margin: 0 auto; ">
+				<div class="contenta " style="width: 440px; height: 40px; background-color: white; float: left; ">
+					<h2 style="font-weight: normal; ">
+						<a   class="a111 " href="https://news.qq.com/ "  target="_blank "   style="width: 40px; height: 26.4px; ">要闻</a>
+				&nbsp;&nbsp;&nbsp;|		<a   class="a111 " href="https://hn.qq.com/ "  target="_blank "   style="position: absolute; left: 153px; top: 256px; ">湖南新闻</a>
+					</h2>
+				<a  class="a111 " target="_blank "     href="https://tianqi.qq.com/ "  style="position: absolute; left: 358px; top: 263px; ">湖南省&nbsp;更换城市</a>
+				</div>
+				
+				
+				
+				<div class="contentb " style="width: 440px; height: 40px; background-color: white ; float: left; ">
+					<h2 style="font-weight: normal; width: 200px; ">
+						
+						<a  href="https://new.qq.com/omn/author/41 "  target="_blank "   style="width: 20px; height: 26.4px; color: #1479D7; text-decoration: none; " >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今日话题</a>
+					</h2>
+				</div>
+				<div class="contentc " style="width: 440px; height: 1070px; background-color: ; float: left; ">
+					<img src="img/遇事不决先截图.png" alt="遇事不决先截图" title="遇事不决先截图" width="440px" />
+					<br/> 
+					<br />
+					<h2 style="font-weight: normal; ">
+					<a   class="a111 " href="https://news.qq.com/ "  target="_blank "   style="width: 40px; height: 26.4px; ">热门赛事</a>
+					</h2>
+					<br />
+					<br />
+					<a href="https://www.huya.com/s?from=baidusem&bd_vid=11015505035411791449" target="_blank"><img src="img/热门赛事.jpg" width="440px" alt="英雄联盟S9全球总决赛" title="英雄联盟S9全球总决赛" /></a>
+				</div>
+				
+				
+				
+				<div class="contentd " style="width: 440px; height: 1000px; background-color: white; " >
+					<br />
+					<br />
+					<br />
+					<h2 >竞速5G时代 湖南蓄势待发驶入快车道</h2>
+					<br />
+					<p>湖南：村主职干部养老保险获补贴 每人每年2000元</p>
+					<br />
+					<p>最新！湖南5地上榜中国地级市百强</p>
+					<br />
+					<p>韩正会见香港特别行政区行政长官林郑月娥</p>
+					<br />
+					<p>东方风起 江河奔腾 开放创新 合作共赢</p>
+					<br />
+					<p>一切为了人民，解读党的十九届四中全会公报</p>
+					<br />
+					<p>用青春书写华章--习近平对当代大学生的期待</p>
+					<br />
+					<img src="img/攀登.jpg " width="420px "/>
+					<p>
+						<h3  style="display: ; "><font face="一纸情书">翻过这座山，</font></h4>
+							<h2 align="center " style="color: #1479d7; "><font face="一纸情书">他们就会听到你的名字！</font></h2>
+					</p>
+				</div>
+				<div class="contente " style="width: 440px; height: 1000px; background-color: ; position: absolute; left: 540px; top: 300px; ">
+		          <h3>
+		          	<br />
+		         <a href="" " style="text-decoration: none; color: #000000; ">第二届进博会，亮点有这些</a>
+		         </h3>
+		        <br />
+		        <h4>人民日报评论| 让教师更好聚焦主业</h4>
+		        <br />
+		        <h4>新京报| 悬赏1.8亿求解技术难题，也是为知识"市场估价"</h4>
+		        <br />
+		        <h4>棱镜| 中国最大二手农机村的流量时代</h4>
+		        <br />
+		        <h4>深网| “老赖”名单上的创业者们值得原谅吗？</h4>
+		        <br />
+		        <h4>谷雨| 28岁上海金融女硬核抗癌380天 自救热文获医生点赞</h4>
+		        <br />
+		        <h4>腾讯大家| 田忌赛马的故事，能证明中国人自古不守规则？</h4>
+		        <br />
+				<img src="img/阶梯.jpg " width="420px "/>
+				<p>
+						<h3  style="display: ; "><font face="一纸情书">登上这阶梯，</font></h4>
+							<h2 align="center " style="color: #1479d7; "><font face="一纸情书">你就会更加接近真理。</font></h2>
+					</p>
+
+		         		         
+		         
+		          	
+		          	
+		        
+			
+
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	</body>
+</html>
