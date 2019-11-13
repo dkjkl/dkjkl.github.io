@@ -1,0 +1,82 @@
+::-webkit-scrollbar{
+	display: none;
+}
+.cc::before,.cc::after {
+	content: "";
+	display: block;
+}
+
+ul {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0px;
+	margin: 0px;
+	transition: all 0.5s;
+	
+}
+
+ul li {
+	display: block;
+	list-style: none;
+	flex-basis: 50%;
+	height: 600px;
+	text-align: center;
+	line-height: 42px;
+	transition: all 0.5s;
+	
+}
+h3{
+	font-weight: bold;
+	font-size: 30px;
+}
+.dis{
+	width: 95%;
+}
+.foot{
+	width: 99%;
+	border-top: 2px rgb(236,236,236) solid;
+	box-shadow: 0px -5px 20px rgb(236,236,236);
+	margin: 0 auto;
+}
+.hh{
+	width: 300px;
+	margin: 0 auto;
+}
+.hh p{
+	color: rgba(119,119,119,0.5);
+	font-size: 12px;
+}
+a{
+	text-decoration: none;
+	color: rgba(0,103,184,0.7);
+	font-size: 18px;
+	transition: all 0.8s;
+}
+a:hover{
+	font-size: 20px;
+	color: rgba(0,103,184,1);
+}
+img {
+	border-radius: 7px;
+	transition: all 0.5s;
+}
+img:hover{
+	border-radius: 7px;
+	opacity: 0.9;
+	transform: scale(1.01);
+}
+
+@media only screen and (min-width:880px) {
+	ul {
+		flex-flow: row nowrap;
+		flex-basis: 100%;
+		transition: all 1s;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	ul li {
+		flex-basis: 100%;
+		transition: all 1s;
+	}
+}
