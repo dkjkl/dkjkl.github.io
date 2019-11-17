@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Java初体验</title>		
+		<style>
+			.table {
+				margin-top: 50px;
+				border-collapse: collapse;
+				text-align: center;
+			}
+			
+			.td {
+				width: 100px;
+			}
+			
+			.input {
+				outline: none;
+			}
+			
+			.a {
+				font-family: "宋体";
+				text-decoration: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2 style="text-align: center;">第八次作业</h2>
+		<center>
+			姓名: <input type="text" id="name" /> &nbsp;&nbsp;&nbsp;&nbsp; 学号: <input type="text" id="num" />
+			<br />
+			<br />
+			<input type="button" value="增加" id="sumbit" onclick="add()" />
+
+			<table border="1" id="tab">
+				<tr>
+					<th>姓名</th>
+					<th>学号</th>
+					<th>
+						<a onclick="empty()" href="">清空</a>
+					</th>
+				</tr>
+			</table>
+		</center>
+		<script>
+			var count = 0;
+
+			function add() {
+				var a = document.createElement("tr");
+				var tab = document.getElementById("tab");
+				var name = document.getElementById("name").value;
+				var num = document.getElementById("num").value;
+				tab.innerHTML +=
+					"<tr id='" + count + "'>" +
+					"<td>" + name + "</td>" +
+					"<td>" + num + "</td>" +
+					'<td><a href="javascript:delet(' + count + ')">' +
+					"删除" +
+					"</a></td>" +
+					"</tr>";
+				count++;
+			}
+
+			function delet(count) {
+				var row = document.getElementById(count);
+				row.remove(count);
+			}
+
+			function empty() {
+				var all;
+				for(; count > 0; count--) {
+					all = document.getElementById(count);
+					all.remove(count);
+				}
+			}
+		</script>
+	</body>
+
+</html>
