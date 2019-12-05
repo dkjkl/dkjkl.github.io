@@ -1,43 +1,4 @@
-/**
- * HTML Structure
- *
- *
- *
 
- Below Pusher
-
- .slide-in-on-top
- .reveal
- .slide-along
- .reverse-slide-out
- .scale-down-pusher
- .scale-up
- .scale-rotate-pusher
- .open-door
- .fall-down
-
-
-
- Into Pusher
-
- .push-down
- .rotate-pusher
- .three-d-rotate-in
- .three-d-rotate-out
- .delayed-three-d-rotate
-
- *
- * body
- *    .wrapper
- *        .pusher
- *            .contents
- *                .inner-contents ( html contents goes here )
- *            nav  ( off canvas menus into pusher )
- *         nav ( off canvas menus beside pusher )
- *
- *
- *
- * */
 
 
 ;
@@ -110,7 +71,7 @@
                     .addClass(settings.position)
                     .addClass(settings.effect);
 
-                //$(settings.menuWrapper).show();
+          
                 $(settings.menuWrapper).addClass('uc-offcanvas-init');
                 $(settings.menuWrapper).addClass('uc-offcanvas-container');
                 $(settings.documentPusher).addClass('uc-offcanvas-pusher');
@@ -149,22 +110,7 @@
 
                     }, 400);
 
-                    /*$(settings.menuWrapper).one(transitionEvent(), function (e) {
 
-                     e.stopPropagation();
-                     $('html').removeClass('uc-offcanvas-html-open');
-                     $('body').removeClass('uc-offcanvas-body-open');
-                     $(window).trigger('uc-offcanvas-closed', [settings]);
-
-                     });
-
-                     $(settings.menuWrapper).one(animationEvent(), function (e) {
-
-                     e.stopPropagation();
-                     $('html').removeClass('uc-offcanvas-html-open');
-                     $('body').removeClass('uc-offcanvas-body-open');
-                     $(window).trigger('uc-offcanvas-closed', [settings]);
-                     });*/
                 });
 
                 $(document).on(eventType, function (event) {
@@ -183,24 +129,7 @@
 
                         }, 400);
 
-                        /*$(settings.menuWrapper).one(transitionEvent(), function (e) {
-
-                         e.stopPropagation();
-                         $('html').removeClass('uc-offcanvas-html-open');
-                         $('body').removeClass('uc-offcanvas-body-open');
-
-                         $(window).trigger('uc-offcanvas-closed', [settings]);
-                         });
-
-                         $(settings.menuWrapper).one(animationEvent(), function (e) {
-
-                         e.stopPropagation();
-                         $('html').removeClass('uc-offcanvas-html-open');
-                         $('body').removeClass('uc-offcanvas-body-open');
-
-                         $(window).trigger('uc-offcanvas-closed', [settings]);
-                         });*/
-                    }
+                    
                 });
             });
         }
